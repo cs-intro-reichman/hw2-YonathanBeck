@@ -23,7 +23,7 @@ public class Cheers {
                 }
             }
             if(!checkIfAn){
-                System.out.println("Give me a " + input1.charAt(i) + ": " + input1.charAt(i) + "!");
+                System.out.println("Give me a  " + input1.charAt(i) + ": " + input1.charAt(i) + "!");
             }
             checkIfAn = false;
         }
