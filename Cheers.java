@@ -17,7 +17,7 @@ public class Cheers {
         //loops input1 and checks in inside loop if input1.charAt(i) == anLetters[j]
         for(int i = 0; i < input1.length(); i++){
             for(int j = 0; j < anLetters.length; j++){
-                if(input1.charAt(i) == anLetters[j]){
+                if(input1.toUpperCase().charAt(i) == anLetters[j]){
                     System.out.println("Give me an " + input1.charAt(i) + ": " + input1.charAt(i) + "!");
                     checkIfAn = true;
                 }
