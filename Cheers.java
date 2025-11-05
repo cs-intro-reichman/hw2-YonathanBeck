@@ -8,7 +8,7 @@ Great work boaz!
 // Prints a crowd cheering output.
 public class Cheers {
     public static void main(String[] args) {
-        String input1 = args[0];
+        String input1 = args[0].toUpperCase();
         //to check if print a or an
         boolean checkIfAn = false;
         int input2 = Integer.parseInt(args[1]);
@@ -17,7 +17,7 @@ public class Cheers {
         //loops input1 and checks in inside loop if input1.charAt(i) == anLetters[j]
         for(int i = 0; i < input1.length(); i++){
             for(int j = 0; j < anLetters.length; j++){
-                if(input1.toUpperCase().charAt(i) == anLetters[j]){
+                if(input1.charAt(i) == anLetters[j]){
                     System.out.println("Give me an " + input1.charAt(i) + ": " + input1.charAt(i) + "!");
                     checkIfAn = true;
                 }
